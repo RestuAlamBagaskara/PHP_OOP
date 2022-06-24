@@ -8,6 +8,7 @@ function getGenap(int $max): Iterator
             $array[] = $i;
         }
     }
+    //Menggunakan cara ArrayIterator
     return new ArrayIterator($array);
 }
 
