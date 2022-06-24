@@ -15,9 +15,13 @@ class ValidationUtil
         }
     }
 
+    //Menggunakan reflection
     static function validateReflection($request)
     {
+        //Membaca struktur class kita saat aplikasi berjalan
         $reflection = new ReflectionClass($request);
+
+        //Mengambil semua data properties
         $properties = $reflection->getProperties(ReflectionProperty::IS_PUBLIC);
         foreach ($properties as $property) {
             if (!$property->isInitialized($request)) {

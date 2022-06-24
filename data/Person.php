@@ -14,6 +14,7 @@ class Person
     var string $country = "Indonesia";
 
     //Fungsi yang akan dipanggil pertama kali saat objek di buat adalah contructor
+    //Termasuk ke dalam magic function
     function __construct(string $name, ?string $address)
     {
         //$name dan $address dari Parameter
@@ -38,6 +39,7 @@ class Person
     }
 
     //Fungsi yang akan dipanggil saat objek di hapus dari memori adalah destructor
+    //Termasuk ke dalam magic function
     function __destruct()
     {
         echo "Object person $this->name is destroyed" . PHP_EOL;

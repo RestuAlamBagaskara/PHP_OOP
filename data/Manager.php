@@ -6,6 +6,7 @@ class Manager
 
     var string $title;
 
+    //Termasuk ke dalam magic function
     public function __construct(string $name = "", string $title = "Manager"){
         $this->name = $name;
         $this->title = $title;

@@ -36,6 +36,8 @@ class Dog extends Animal
         echo "Dog $this->name is running" . PHP_EOL;
     }
 
+    //Mengakses parent class dari $animalFood
+    //Contravariance
     public function eat(Food $animalFood): void
     {
         echo "Dog is eating" . PHP_EOL;

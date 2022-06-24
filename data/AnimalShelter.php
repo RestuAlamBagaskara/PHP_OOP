@@ -11,6 +11,9 @@ interface AnimalShelter
 
 class CatShelter implements AnimalShelter
 {
+    //Dengan Covariance
+    //Mengubah return value menjadi lebih spesifik
+    //Dari class turunan Animal
     public function adopt(string $name): Cat
     {
         $cat = new Cat();

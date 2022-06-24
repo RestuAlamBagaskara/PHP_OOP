@@ -5,8 +5,8 @@ require_once "data/LoginRequest.php";
 require_once "helper/ValidationUtil.php";
 
 $request = new LoginRequest();
-$request->username = "eko";
-$request->password = "rahasia";
+$request->username = null;
+$request->password = "hahaa";
 
 // ValidationUtil::validate($request);
 
@@ -20,10 +20,10 @@ class RegisterUserRequest
 }
 
 $register = new RegisterUserRequest();
-$register->name = "Eko";
-$register->address = "Subang";
-$register->email = "eko@gmail.com";
+$register->name = "Alam";
+$register->address = "Meteseh";
+$register->email = "restu@gmail.com";
 
 ValidationUtil::validateReflection($register);
 
-ValidationUtil::validate($register);
+// ValidationUtil::validate($register);
